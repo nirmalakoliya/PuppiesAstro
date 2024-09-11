@@ -5,7 +5,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 export default function NavBar() {
   return (
     <>
-      <div className="border-t-4 border-purple-600">
+      <div className="border-t-4  border-purple-600">
         <div className="flex items-center justify-between bg-white p-3 shadow-md">
           {/* Left links section */}
           <div className="hidden space-x-4 sm:flex">
@@ -18,7 +18,7 @@ export default function NavBar() {
                 Our Puppies <FaAngleDown />
               </a>
               {/* Dropdown content */}
-              <div className="absolute left-0 mt-2 hidden w-full bg-white shadow-lg group-hover:block sm:w-[90vw] md:w-[80vw] lg:w-[75vw] xl:w-[99vw]">
+              <div className="absolute left-0 z-50 hidden  w-full bg-white shadow-lg group-hover:block sm:w-[90vw] md:w-[80vw] lg:w-[75vw] xl:w-[98vw]">
                 <main className="p-4">
                   <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                     {/* Categories */}
@@ -27,19 +27,13 @@ export default function NavBar() {
                         <h2 className="mb-2 font-bold">BREEDS</h2>
                         <ul className="space-y-2">
                           <li>
-                            <a href="#" className="text-gray-600">
-                              Designer Hybrid
-                            </a>
+                            <a href="#">Designer Hybrid</a>
                           </li>
                           <li>
-                            <a href="#" className="text-gray-600">
-                              Purebred
-                            </a>
+                            <a href="#">Purebred</a>
                           </li>
                           <li>
-                            <a href="#" className="text-gray-600">
-                              All Breeds
-                            </a>
+                            <a href="#">All Breeds</a>
                           </li>
                         </ul>
                       </div>
@@ -48,34 +42,22 @@ export default function NavBar() {
                         <h2 className="mb-2 font-bold">CHARACTERISTICS</h2>
                         <ul className="space-y-2">
                           <li>
-                            <a href="#" className="text-gray-600">
-                              Hypoallergenic And Low Shed
-                            </a>
+                            <a href="#">Hypoallergenic And Low Shed</a>
                           </li>
                           <li>
-                            <a href="#" className="text-gray-600">
-                              Large Sized
-                            </a>
+                            <a href="#">Large Sized</a>
                           </li>
                           <li>
-                            <a href="#" className="text-gray-600">
-                              Medium Sized
-                            </a>
+                            <a href="#">Medium Sized</a>
                           </li>
                           <li>
-                            <a href="#" className="text-gray-600">
-                              Small Sized
-                            </a>
+                            <a href="#">Small Sized</a>
                           </li>
                           <li>
-                            <a href="#" className="text-gray-600">
-                              New Arrival
-                            </a>
+                            <a href="#">New Arrival</a>
                           </li>
                           <li>
-                            <a href="#" className="text-gray-600">
-                              Special Deals
-                            </a>
+                            <a href="#">Special Deals</a>
                           </li>
                         </ul>
                       </div>
@@ -124,38 +106,30 @@ export default function NavBar() {
               Financing
             </a>
 
-            <div className="group relative">
+            <div className="group relative z-50">
               <a
-                href=""
-                className="r flex items-center gap-2 text-sm font-medium text-black lg:text-base"
+                href="#"
+                className="flex items-center gap-2 text-sm font-medium text-black lg:text-base"
               >
                 About Us <FaAngleDown />
-                <div className="absolute left-0 mt-2 hidden w-full bg-white shadow-lg group-hover:block sm:w-[18vw]">
+                <div className="absolute left-0 hidden w-full bg-white shadow-lg group-hover:block sm:w-[18vw]">
                   <main className="p-4">
                     <div className="space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                       <div className="flex flex-col space-x-4 md:w-1/2 md:flex-row">
                         <div className="flex-1">
-                          <h2 className="mb-2 text-gray-600">About Us</h2>
+                          <h2>About Us</h2>
                           <ul className="space-y-2">
                             <li>
-                              <a href="#" className="text-gray-600">
-                                Health Guarantee
-                              </a>
+                              <a href="#">Health Guarantee</a>
                             </li>
                             <li>
-                              <a href="#" className="text-gray-600">
-                                Breeder Standards
-                              </a>
+                              <a href="#">Breeder Standards</a>
                             </li>
                             <li>
-                              <a href="#" className="text-gray-600">
-                                Customer Reviews
-                              </a>
+                              <a href="#">Customer Reviews</a>
                             </li>
                             <li>
-                              <a href="#" className="text-gray-600">
-                                Knowledge Center
-                              </a>
+                              <a href="#">Knowledge Center</a>
                             </li>
                           </ul>
                         </div>
