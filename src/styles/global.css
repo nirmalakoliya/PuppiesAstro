@@ -18,3 +18,8 @@
 .video-content {
   z-index: 2;
 }
+
+.nirmal {
+  background: url(https://img.freepik.com/free-vector/animal-background-vector-with-cute-pets-illustration_53876-127698.jpg);
+  object-fit: cover;
+}
