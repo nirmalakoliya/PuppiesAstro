@@ -17,8 +17,10 @@ export default function DogsInfo() {
             {/* Text content */}
             <div className="ml-8 flex flex-col md:w-2/3">
               <div className="mb-16">
-                <h1 className="title mb-2 text-2xl">PUPPIES FOR SALE</h1>
-                <h2 className="title mb-4 text-4xl">
+                <h1 className="title mb-6 text-4xl font-bold">
+                  PUPPIES FOR SALE
+                </h1>
+                <h2 className="title mb-4 text-2xl font-bold">
                   WANT A FURRY COMPANION? OUR PUPPIES FOR SALE ARE HERE!
                 </h2>
                 <p className="mb-4">
