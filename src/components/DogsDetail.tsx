@@ -96,8 +96,8 @@ export default function DogsDetail() {
 
       {/* Dog section 1 */}
       <section>
-        <div className="relative top-8 flex w-full flex-col border-2  md:flex-row">
-          <div className="nirmal h-auto w-full md:w-1/3">
+        <div className="relative top-8 flex w-full flex-col border-2 md:flex-row">
+          <div className="sectionOne h-auto w-full md:w-1/3">
             <div className="p-4 md:p-8">
               <h1 className="mb-4 text-center text-xl font-bold text-gray-800 md:text-left md:text-3xl">
                 ARRANGE A VIRTUAL PUPPY MEET AND GREET
@@ -114,11 +114,11 @@ export default function DogsDetail() {
 
           <div className="flex w-full flex-col md:w-2/3 md:flex-row">
             {/*  Card 1 */}
-            <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+            <div className="flex h-auto w-full flex-col  bg-white shadow-lg md:w-1/2">
               <img
                 src="/Images/dogDetail1.jpg"
                 alt="Golden Retriever puppy wearing a captain's hat"
-                className="h-48 w-full object-cover md:h-64"
+                className="h-48 w-full object-cover  md:h-[30rem]"
               />
 
               <div className="p-3 md:p-4">
@@ -136,7 +136,7 @@ export default function DogsDetail() {
               <img
                 src="/Images/dogDetail2.jpg"
                 alt="Golden Retriever puppy with a yellow and black scarf"
-                className="h-48 w-full object-cover md:h-64"
+                className="h-48 w-full object-cover md:h-[30rem]"
               />
               <div className="p-3 md:p-4">
                 <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -161,7 +161,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail3.jpg"
                   alt="Golden Retriever puppy wearing a captain's hat"
-                  className="h-48 w-full object-cover md:h-64"
+                  className="h-48 w-full object-cover md:h-[30rem]"
                 />
                 <div className="font-roboto absolute right-4 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
                   NEW ARRIVAL
@@ -184,7 +184,7 @@ export default function DogsDetail() {
               <img
                 src="/Images/dogDetail4.jpg"
                 alt="Golden Retriever puppy wearing a captain's hat"
-                className="h-48 w-full object-cover md:h-64"
+                className="h-48 w-full object-cover md:h-[30rem]"
               />
               <div className="p-3 md:p-4">
                 <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -202,7 +202,7 @@ export default function DogsDetail() {
               <img
                 src="/Images/dogDetail5.jpg"
                 alt="Golden Retriever puppy with a yellow and black scarf"
-                className="h-48 w-full object-cover md:h-64"
+                className="h-48 w-full object-cover md:h-[30rem]"
               />
               <div className="p-3 md:p-4">
                 <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -225,7 +225,7 @@ export default function DogsDetail() {
               <img
                 src="/Images/dogDetail6.jpg"
                 alt="Golden Retriever puppy with a yellow and black scarf"
-                className="h-48 w-full object-cover md:h-64"
+                className="h-48 w-full object-cover md:h-[30rem]"
               />
               <div className="p-3 md:p-4">
                 <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -238,22 +238,18 @@ export default function DogsDetail() {
               </div>
             </div>
 
-            <div className=" h-auto w-full">
-              <div className="flex items-center justify-center bg-[#d9e8b2]">
-                <div className="flex flex-col items-center rounded-lg  bg-[#d9e8b2] p-12 md:flex-row">
+            <div className="sectionTwo b h-auto w-full">
+              <div className="flex items-center justify-center">
+                <div className="flex flex-col items-center rounded-lg p-12 md:flex-row">
                   <div className="text-center md:w-1/2 md:text-left">
                     <h1 className="mb-4 text-4xl font-bold text-[#9b6bcb]">
-                      UP TO 100%
-                      <br />
-                      FINANCING
-                      <br />
-                      AVAILABLE
+                      UP TO 100% FINANCING AVAILABLE
                     </h1>
-                    <p className="mb-4 text-[#333]">
+                    <p className="mb-4 font-bold text-[#333]">
                       Apply now to get your available offers for Low Monthly
                       Puppy Payment Plans
                     </p>
-                    <button className="rounded bg-white px-4 py-2 text-black shadow">
+                    <button className="rounded bg-white px-4 py-2 font-bold text-black shadow">
                       Book now
                     </button>
                   </div>
@@ -284,7 +280,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail8.jpg"
                   alt="Golden Retriever puppy wearing a captain's hat"
-                  className="h-48 w-full object-cover md:h-64"
+                  className="h-48 w-full object-cover md:h-[30rem]"
                 />
               </div>
               <div className="p-3 md:p-4">
@@ -305,7 +301,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail9.jpg"
                   alt="Golden Retriever puppy wearing a captain's hat"
-                  className="h-48 w-full object-cover md:h-64"
+                  className="h-48 w-full object-cover md:h-[30rem]"
                 />
                 <div className="font-roboto absolute right-3 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
                   SPECIAL OFFER
@@ -327,7 +323,7 @@ export default function DogsDetail() {
               <img
                 src="/Images/dogDetail10.jpg"
                 alt="Golden Retriever puppy with a yellow and black scarf"
-                className="h-48 w-full object-cover md:h-64"
+                className="h-48 w-full object-cover md:h-[30rem]"
               />
               <div className="p-3 md:p-4">
                 <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -346,21 +342,17 @@ export default function DogsDetail() {
       <section>
         <div className="relative top-16 flex w-full flex-col border-2  md:flex-row">
           <div className="flex w-full flex-col md:flex-row">
-            <div className=" h-auto w-full">
-              <div className="flex items-center justify-center bg-yellow-200">
-                <div className="flex flex-col items-center rounded-lg  bg-yellow-200 p-12 md:flex-row">
+            <div className="sectionThree h-auto w-full">
+              <div className="flex items-center justify-center">
+                <div className="flex flex-col items-center rounded-lg  p-12 md:flex-row">
                   <div className="text-center md:w-1/2 md:text-left">
                     <h1 className="mb-4 text-4xl font-bold text-[#9b6bcb]">
-                      FEAL PUPPU
-                      <br />
-                      OWNERS, REAL
-                      <br />
-                      REVIEWS
+                      FEAL PUPPU OWNERS, REAL REVIEWS
                     </h1>
-                    <p className="mb-4 text-[#333]">
+                    <p className="mb-4  font-bold text-[#333]">
                       Browse our past client Google testimonials
                     </p>
-                    <button className="rounded bg-white px-4 py-2 text-black shadow">
+                    <button className="rounded  bg-white px-4 py-2 font-bold text-black shadow">
                       Read reviews
                     </button>
                   </div>
@@ -381,7 +373,7 @@ export default function DogsDetail() {
               <img
                 src="/Images/dogDetail12.jpg"
                 alt="Golden Retriever puppy with a yellow and black scarf"
-                className="h-48 w-full object-cover md:h-64"
+                className="h-48 w-full object-cover md:h-[30rem]"
               />
               <div className="p-3 md:p-4">
                 <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -406,7 +398,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail13.jpg"
                   alt="Golden Retriever puppy wearing a captain's hat"
-                  className="h-48 w-full object-cover md:h-64"
+                  className="h-48 w-full object-cover md:h-[30rem]"
                 />
               </div>
               <div className="p-3 md:p-4">
@@ -427,7 +419,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail14.jpg"
                   alt="Golden Retriever puppy wearing a captain's hat"
-                  className="h-48 w-full object-cover md:h-64"
+                  className="h-48 w-full object-cover md:h-[30rem]"
                 />
                 <div className="font-roboto absolute right-3 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
                   NEW ARRIVAL
@@ -448,7 +440,7 @@ export default function DogsDetail() {
               <img
                 src="/Images/dogDetail15.jpg"
                 alt="Golden Retriever puppy with a yellow and black scarf"
-                className="h-48 w-full object-cover md:h-64"
+                className="h-48 w-full object-cover md:h-[30rem]"
               />
               <div className="p-3 md:p-4">
                 <h2 className="text-sm font-bold text-gray-800 md:text-base">

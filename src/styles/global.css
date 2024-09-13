@@ -19,7 +19,20 @@
   z-index: 2;
 }
 
-.nirmal {
-  background: url(https://img.freepik.com/free-vector/animal-background-vector-with-cute-pets-illustration_53876-127698.jpg);
+.sectionOne {
+  background: url(https://img.freepik.com/premium-photo/minimalistic-pattern-featuring-cute-kitten-paw-prints-soft-pastel-background_1287624-29246.jpg);
   object-fit: cover;
+  background-size: cover;
+}
+.sectionTwo {
+  background: url(https://png.pngtree.com/background/20210716/original/pngtree-cute-dog-tiled-background-blue-bones-picture-image_1349649.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+/* border-2 border-black */
+
+.sectionThree {
+  background: url(https://t3.ftcdn.net/jpg/00/84/55/66/360_F_84556601_W71hd1xmCxZUhsscyNlokY1an7Kqx6ZJ.jpg);
+  object-fit: cover;
+  background-size: cover;
 }
