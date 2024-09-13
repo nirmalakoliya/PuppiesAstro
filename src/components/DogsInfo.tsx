@@ -1,26 +1,28 @@
 export default function DogsInfo() {
   return (
     <>
-      {/* Section 1 */}
-      <section className="relative top-20 bg-[#f5f0e1]  py-14">
-        <div className="flex flex-col items-center justify-center p-6">
-          <div className="flex flex-col md:flex-row">
-            {/* Sticky Image - Hidden on small screens */}
-            <div className="hidden flex-none md:block md:w-1/3">
-              <img
-                src="/Images/DogInfo.png"
-                alt="Illustration of a playful puppy"
-                className="h-64 w-64 md:sticky md:top-20 md:h-auto md:w-auto"
-              />
-            </div>
+      {/* Add space at the top */}
+      <div className="mt-16"></div>
 
+      {/* Sticky Image, hidden on small screens */}
+      <div className="sticky top-0 mb-[-15rem] hidden h-64 w-96 sm:block">
+        <img
+          src="/Images/DogInfo.png"
+          alt="Illustration of a playful puppy"
+          className="relative left-5 top-12 h-64 w-64 md:h-auto md:w-auto"
+        />
+      </div>
+
+      {/* Section 1 */}
+      <section className="bg-[#F4F4F4] p-8 py-16">
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex md:flex-row">
             {/* Text content */}
-            <div className="ml-8 flex flex-col md:w-2/3">
+            <div className="flex flex-col md:ml-auto md:w-[71%]">
+              {/* First info section */}
               <div className="mb-16">
-                <h1 className="title mb-6 text-4xl font-bold">
-                  PUPPIES FOR SALE
-                </h1>
-                <h2 className="title mb-4 text-2xl font-bold">
+                <h1 className="mb-6 text-4xl font-bold">PUPPIES FOR SALE</h1>
+                <h2 className="mb-4 text-2xl font-bold">
                   WANT A FURRY COMPANION? OUR PUPPIES FOR SALE ARE HERE!
                 </h2>
                 <p className="mb-4">
@@ -42,6 +44,31 @@ export default function DogsInfo() {
                   journey with Forever Love Puppies, where every moving tail
                   means endless happiness and friendship.
                 </p>
+                <p className="mb-4 ">
+                  Are you worried about allergies but love puppies? Forever Love
+                  Puppies has a large selection of hypoallergenic puppies that
+                  are great for families with sensitive pets. Some of our
+                  breeds, like Poodles, Bichon Frises, and Maltese, are known
+                  for having bodies that dont shed much, which makes them great
+                  puppies for people with allergies.
+                </p>
+
+                <p className="mb-4 ">
+                  You dont have to think about allergic reactions when you have
+                  a puppy. We carefully breed and care for each hypoallergenic
+                  dog so that they will be a healthy, happy, and loving addition
+                  to your family. Find your right hypoallergenic friend and
+                  enjoy the joy of having a furry friend without the sneezes.
+                </p>
+
+                <p className="mb-4">
+                  We are committed to honestly breeding our puppies and making
+                  sure they are healthy and happy. The health and happiness of
+                  our puppies come first when we breed them. We focus on
+                  responsible breeding, training, and full health checks. Every
+                  puppy grows up in a loving home and gets the best care and
+                  attention.
+                </p>
                 <button className="rounded border border-black bg-white px-4 py-2 shadow hover:bg-gray-100">
                   Get in touch
                 </button>
@@ -52,20 +79,16 @@ export default function DogsInfo() {
       </section>
 
       {/* Section 2 */}
-      <section className="relative top-20 bg-[#e0e4cc] py-14">
-        <div className="flex flex-col items-center justify-center p-6">
-          <div className="relative top-8 flex flex-col md:flex-row">
-            {/* No image in this section, but maintaining similar layout */}
-            <div className="hidden md:block md:w-1/3"></div>
-
+      <section className="bg-[#FAF0E6] p-8 py-16">
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex md:flex-row">
             {/* Text content */}
-            <div className="ml-8 flex flex-col md:w-2/3">
-              <div className="mb-16">
-                <h1 className="title mb-6 text-4xl font-bold">
-                  OUR EXCLUSIVE PUPPIES FOR SALE TO CHARM UP YOUR LIFE
-                </h1>
-                <h2 className="title mb-4 text-2xl font-bold">
-                  DESIGNER HYBRID PUPPIES
+            <div className="flex flex-col md:ml-auto md:w-[71%]">
+              {/* Second info section */}
+              <div>
+                <h1 className="mb-6 text-4xl font-bold">PUPPIES FOR SALE</h1>
+                <h2 className=" mb-4 text-2xl font-bold">
+                  WANT A FURRY COMPANION? OUR PUPPIES FOR SALE ARE HERE!
                 </h2>
                 <p className="mb-4">
                   Forever Love Puppies welcomes you into the magical world of
@@ -171,21 +194,20 @@ export default function DogsInfo() {
         </div>
       </section>
 
-      {/* Section 3 */}
-      <section className="relative top-20 bg-[#FDEAE5] py-14">
-        <div className="flex flex-col items-center justify-center p-6">
-          <div className="relative top-8 flex flex-col md:flex-row">
-            {/* No image in this section, but maintaining similar layout */}
-            <div className="hidden md:block md:w-1/3"></div>
-
+      {/* section 3*/}
+      <section className="bg-[#FDEAE5] p-8 py-16">
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex md:flex-row">
             {/* Text content */}
-            <div className="ml-8 flex flex-col md:w-2/3">
+            <div className="flex flex-col md:ml-auto md:w-[71%]">
+              {/* First info section */}
               <div className="mb-16">
-                <h1 className="title mb-6 text-4xl font-bold">
+                <h1 className="mb-6 text-4xl font-bold">
+                  {" "}
                   FOREVER LOVE PUPPIES — A PLACE TO MEET AND GREET YOUR DREAM
                   PUPPY
                 </h1>
-                <h2 className="title mb-4 text-2xl font-bold">
+                <h2 className="mb-4 text-2xl font-bold">
                   AVAILABILITY OF INCREDIBLE DOGS FOR SALE
                 </h2>
                 <p className="mb-4">
@@ -278,16 +300,15 @@ export default function DogsInfo() {
       </section>
 
       {/* Section 4 */}
-      <section className="relative top-20 bg-[#7D4E9E] py-14">
-        <div className="flex flex-col items-center justify-center p-6">
-          <div className="relative top-8 flex flex-col md:flex-row">
-            {/* No image in this section, but maintaining similar layout */}
-            <div className="hidden md:block md:w-1/3"></div>
-
+      <section className="bg-[#7D4E9E] p-8 py-16">
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex md:flex-row">
             {/* Text content */}
-            <div className="ml-8 flex flex-col md:w-2/3">
+            <div className="flex flex-col md:ml-auto md:w-[71%]">
+              {/* First info section */}
               <div className="mb-16">
-                <h1 className="title mb-6 text-4xl font-bold text-white">
+                <h1 className="mb-6 text-4xl font-bold text-white">
+                  {" "}
                   NOT JUST PUPPIES, THEY ARE FURBALLS OF HAPPINESS
                 </h1>
                 <h2 className="title mb-4 text-2xl font-bold text-white">
@@ -401,19 +422,15 @@ export default function DogsInfo() {
       </section>
 
       {/* Section 5 */}
-      <section className="relative top-20 bg-[#f5f5dc] py-14">
-        <div className="flex flex-col items-center justify-center p-6">
-          <div className="relative top-8 flex flex-col md:flex-row">
-            {/* No image in this section, but maintaining similar layout */}
-            <div className="hidden md:block md:w-1/3"></div>
-
-            {/* Text content */}
-            <div className="ml-8 flex flex-col md:w-2/3">
+      <section className="bg-[#f5f5dc] p-8 py-16">
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex md:flex-row">
+            <div className="flex flex-col md:ml-auto md:w-[71%]">
               <div className="mb-16">
-                <h1 className="title mb-6 text-4xl font-bold ">
+                <h1 className="mb-6 text-4xl font-bold">
                   Frequently Asked Questions About Puppies For Sale
                 </h1>
-                <h2 className="title mb-4 text-2xl font-bold ">
+                <h2 className="mb-4 text-2xl font-bold">
                   How much do puppies for sale cost?
                 </h2>
                 <p className="mb-4 ">
@@ -459,9 +476,9 @@ export default function DogsInfo() {
         </div>
       </section>
 
-      <section className="relative top-20 bg-[#ECDFCC] py-32">
+      <section className="bg-[#E2E2B6] py-32">
         <div className="hidden md:block md:w-1/3"></div>
-        <div className="flex  flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <div className="relative">
             <h1 className="text-center text-6xl">
               <span className="text-yellow-500">LET'S FETCH HAPPINESS</span>
