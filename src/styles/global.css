@@ -1,3 +1,4 @@
+/*! DogVideo page css */
 .video-docker video {
   top: 50%;
   left: 50%;
@@ -27,6 +28,7 @@
   height: 101%;
 }
 
+/*! DogsDetail page css */
 .sectionOne {
   background: url(https://img.freepik.com/premium-photo/minimalistic-pattern-featuring-cute-kitten-paw-prints-soft-pastel-background_1287624-29246.jpg);
   object-fit: cover;
