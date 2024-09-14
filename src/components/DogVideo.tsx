@@ -3,7 +3,7 @@ import { GiSniffingDog } from "react-icons/gi";
 export default function DogVideo() {
   return (
     <>
-      <section className="relative top-1 flex h-screen flex-col items-center justify-center px-4 py-0 text-center text-white">
+      <section className=" relative top-1 flex h-screen flex-col items-center justify-center px-4 py-0 text-center text-white">
         <div className="video-docker absolute inset-0 h-full w-full overflow-hidden">
           <video
             className="absolute left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover"
@@ -16,6 +16,12 @@ export default function DogVideo() {
               type="video/mp4"
             />
           </video>
+          <img
+            src="/Images/Wave2.png"
+            alt="wave"
+            style={{ transform: "scaleY(-1)" }}
+            className="WaveImage"
+          />
         </div>
 
         <div className="video-content z-10 space-y-4">
