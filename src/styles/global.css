@@ -46,17 +46,14 @@
   background-size: cover;
 }
 
-/*! topheading font */
-.font {
+.FontOne {
   font-family: League Spartan;
 }
 
-/*! DogVideo font  */
-
-.dogvideofont {
+.FontTwo {
   font-family: HEY LOUIE;
 }
 
-.PuppyDealsFonts {
+.FontThree {
   font-family: League Spartan;
 }

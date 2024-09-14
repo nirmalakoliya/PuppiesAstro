@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 export default function DogsDetail() {
   return (
     <>
-      <div className="font">
+      <div className="FontThree">
         <section className="relative top-4 border-2 bg-white p-2 lg:p-4">
           {/* <!-- Filter By and Sort By for small screens --> */}
           <div className="flex items-center justify-center space-x-2 lg:justify-between lg:space-x-4">
