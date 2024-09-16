@@ -1,31 +1,33 @@
 /*! DogVideo page css */
+.video-docker {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .video-docker video {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 1445px;
+  height: 631px;
+  object-fit: cover;
 }
 
-.video-docker::after {
-  content: "";
-  position: absolute;
+/*! Make the SVG full screen css */
+.video-docker svg {
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  height: 170%;
+}
+
+.video-docker svg {
+  width: 100%;
+  height: 170%;
   background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
 }
 
-.video-content {
-  z-index: 2;
-}
-
-.WaveImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 101%;
+@media only screen and (max-width: 768px) {
+  .video-docker svg {
+    height: 170%;
+    width: 250%;
+  }
 }
 
 /*! DogsDetail page css */
