@@ -123,7 +123,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail1.jpg"
                   alt="Golden Retriever puppy wearing a captain's hat"
-                  className="h-48 w-full object-cover  md:h-[30rem]"
+                  className="h-[26rem] w-full object-cover  md:h-[30rem]"
                 />
 
                 <div className="p-3 md:p-4">
@@ -141,7 +141,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail2.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
-                  className="h-48 w-full object-cover md:h-[30rem]"
+                  className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
                 <div className="p-3 md:p-4">
                   <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -167,7 +167,7 @@ export default function DogsDetail() {
                   <img
                     src="/Images/dogDetail3.jpg"
                     alt="Golden Retriever puppy wearing a captain's hat"
-                    className="h-48 w-full object-cover md:h-[30rem]"
+                    className="h-[26rem] w-full object-cover md:h-[30rem]"
                   />
                   <div className="font-roboto absolute right-4 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
                     NEW ARRIVAL
@@ -190,7 +190,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail4.jpg"
                   alt="Golden Retriever puppy wearing a captain's hat"
-                  className="h-48 w-full object-cover md:h-[30rem]"
+                  className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
                 <div className="p-3 md:p-4">
                   <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -209,7 +209,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail5.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
-                  className="h-48 w-full object-cover md:h-[30rem]"
+                  className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
                 <div className="p-3 md:p-4">
                   <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -232,7 +232,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail6.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
-                  className="h-48 w-full object-cover md:h-[30rem]"
+                  className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
                 <div className="p-3 md:p-4">
                   <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -287,7 +287,7 @@ export default function DogsDetail() {
                   <img
                     src="/Images/dogDetail8.jpg"
                     alt="Golden Retriever puppy wearing a captain's hat"
-                    className="h-48 w-full object-cover md:h-[30rem]"
+                    className="h-[26rem] w-full object-cover md:h-[30rem]"
                   />
                 </div>
                 <div className="p-3 md:p-4">
@@ -308,7 +308,7 @@ export default function DogsDetail() {
                   <img
                     src="/Images/dogDetail9.jpg"
                     alt="Golden Retriever puppy wearing a captain's hat"
-                    className="h-48 w-full object-cover md:h-[30rem]"
+                    className="h-[26rem] w-full object-cover md:h-[30rem]"
                   />
                   <div className="font-roboto absolute right-3 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
                     SPECIAL OFFER
@@ -330,7 +330,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail10.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
-                  className="h-48 w-full object-cover md:h-[30rem]"
+                  className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
                 <div className="p-3 md:p-4">
                   <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -380,7 +380,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail12.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
-                  className="h-48 w-full object-cover md:h-[30rem]"
+                  className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
                 <div className="p-3 md:p-4">
                   <h2 className="text-sm font-bold text-gray-800 md:text-base">
@@ -405,7 +405,7 @@ export default function DogsDetail() {
                   <img
                     src="/Images/dogDetail13.jpg"
                     alt="Golden Retriever puppy wearing a captain's hat"
-                    className="h-48 w-full object-cover md:h-[30rem]"
+                    className="h-[26rem] w-full object-cover md:h-[30rem]"
                   />
                 </div>
                 <div className="p-3 md:p-4">
@@ -426,7 +426,7 @@ export default function DogsDetail() {
                   <img
                     src="/Images/dogDetail14.jpg"
                     alt="Golden Retriever puppy wearing a captain's hat"
-                    className="h-48 w-full object-cover md:h-[30rem]"
+                    className="h-[26rem] w-full object-cover md:h-[30rem]"
                   />
                   <div className="font-roboto absolute right-3 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
                     NEW ARRIVAL
@@ -447,7 +447,7 @@ export default function DogsDetail() {
                 <img
                   src="/Images/dogDetail15.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
-                  className="h-48 w-full object-cover md:h-[30rem]"
+                  className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
                 <div className="p-3 md:p-4">
                   <h2 className="text-sm font-bold text-gray-800 md:text-base">
