@@ -500,10 +500,10 @@ export default function DogsInfo() {
         </div>
       </section>
 
-      <section className="bg-[#E2E2B6] py-32">
+      <section className="bg-[#E2E2B6] pb-44 pt-32">
         <div className="hidden md:block md:w-1/3"></div>
         <div className="flex flex-col items-center justify-center">
-          <div className="relative">
+          <div>
             <h1 className="text-center text-6xl">
               <span className="FontTwo text-yellow-500">
                 LET'S FETCH HAPPINESS
@@ -519,6 +519,13 @@ export default function DogsInfo() {
             <button className="FontOne rounded border border-gray-300 bg-white px-4 py-2 shadow">
               See All Available Puppies
             </button>
+            <div className="right-0 top-0 mb-[-15rem] mr-5 md:hidden">
+              <img
+                src="/Images/DogInfo.png"
+                alt="Illustration of a playful puppy"
+                className="relative bottom-9 h-64 w-64 md:h-auto md:w-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
