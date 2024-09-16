@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="flex flex-col items-start justify-between border-b border-gray-300 pb-8 md:flex-row">
             <div className="w-full md:w-1/4">
               <h1 className="text-4xl font-bold">Forever Love Puppies</h1>
-              <p className="mt-2">Where puppy love begins</p>
+              <p className="FontOne mt-2">Where puppy love begins</p>
               <div className="mt-4 flex space-x-4">
                 <BiLogoInstagramAlt className="text-2xl" />
                 <AiFillTikTok className="text-2xl" />
@@ -23,14 +23,16 @@ export default function Footer() {
                 <IoLogoPinterest className="text-2xl" />
               </div>
               <div className="mt-8">
-                <h2 className="font-bold">SUBSCRIBE FOR PUPPY UPDATES</h2>
-                <p className="mt-2">
+                <h2 className="FontOne font-bold">
+                  SUBSCRIBE FOR PUPPY UPDATES
+                </h2>
+                <p className="FontOne mt-2">
                   Do you want to be the first to know what's happening at
                   Forever Love Puppies? Sign up here to receive exclusive
                   updates on new puppies, offers, and other fun stuff.
                 </p>
 
-                <div className="relative right-3 mt-4 flex items-center rounded border border-gray-400 p-2">
+                <div className="FontOne relative right-3 mt-4 flex items-center rounded border border-gray-400 p-2">
                   <input
                     type="email"
                     placeholder="Enter email address"
@@ -45,8 +47,8 @@ export default function Footer() {
 
             <div className="mt-8 grid w-full grid-cols-2 gap-4 md:mt-0 md:w-3/4 md:grid-cols-4">
               <div>
-                <h2 className="font-bold">OUR PUPPIES</h2>
-                <ul className="mt-4 space-y-2">
+                <h2 className="FontTwo font-bold">OUR PUPPIES</h2>
+                <ul className="FontOne mt-4 space-y-2">
                   <li>Designer Hybrid</li>
                   <li>Purebred</li>
                   <li>All Breeds</li>
@@ -60,8 +62,8 @@ export default function Footer() {
               </div>
 
               <div>
-                <h2 className="font-bold">ABOUT US</h2>
-                <ul className="mt-4 space-y-2">
+                <h2 className="FontTwo font-bold">ABOUT US</h2>
+                <ul className="FontOne mt-4 space-y-2">
                   <li>About Us</li>
                   <li>Health Guarantee</li>
                   <li>Breeder Standards</li>
@@ -70,8 +72,8 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="col-span-2 md:col-span-1">
-                <h2 className="font-bold">FINANCING</h2>
-                <ul className="mt-4 space-y-2">
+                <h2 className="FontTwo font-bold">FINANCING</h2>
+                <ul className="FontOne mt-4 space-y-2">
                   <li>Overview financing</li>
                   <li>Financing in Ft Lauderdale</li>
                   <li>Financing in Miami</li>
@@ -81,14 +83,14 @@ export default function Footer() {
               </div>
 
               <div>
-                <h2 className="font-bold">OUR LOCATIONS</h2>
+                <h2 className="FontTwo font-bold">OUR LOCATIONS</h2>
                 <div className="mt-4 space-y-4">
                   <div>
-                    <h3 className="flex cursor-pointer gap-2 font-bold">
+                    <h3 className="FontTwo flex cursor-pointer gap-2 font-bold">
                       <FaSortUp className="relative top-2 " />
                       Ft Lauderdale
                     </h3>
-                    <div className="border border-black p-1">
+                    <div className="FontOne border border-black p-1">
                       <p className="mt-2">(855) 775-0552</p>
                       <p>4157 N State Rd 7 Lauderdale Lakes, FL 33319</p>
                       <p>Every Day 11:00AM - 9:00PM</p>
@@ -111,13 +113,13 @@ export default function Footer() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="flex cursor-pointer gap-2 font-bold">
+                    <h3 className="FontTwo flex cursor-pointer gap-2 font-bold">
                       <FaAngleDown className="relative top-1" />
                       Miami
                     </h3>
                   </div>
                   <div>
-                    <h3 className="flex cursor-pointer gap-2 font-bold">
+                    <h3 className="FontTwo flex cursor-pointer gap-2 font-bold">
                       <FaAngleDown className="relative top-1" />
                       North Miami
                     </h3>
@@ -127,7 +129,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="mt-8 flex flex-col items-center justify-between border-t border-gray-300 pt-4 md:flex-row">
+          <div className="FontOne mt-8 flex flex-col items-center justify-between border-t border-gray-300 pt-4 md:flex-row">
             <div className="relative bottom-11 flex space-x-8">
               <a href="#" className="text-black">
                 Privacy Policy
@@ -141,7 +143,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <p className="mt-4 text-xs text-gray-600">
+          <p className="FontOne mt-4 text-xs text-gray-600">
             ALL PUPPY PRICING, AVAILABILITY, PHOTOGRAPHY, ESTIMATED ARRIVAL
             TIMES, LOCATIONS, CURRENT WEIGHTS, REGISTRATIONS, PARENT BREED
             DESCRIPTIONS, PARENT WEIGHT INFORMATIONS AND ANY OTHER DESCRIPTIONS
