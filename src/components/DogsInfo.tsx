@@ -505,16 +505,18 @@ export default function DogsInfo() {
         <div className="flex flex-col items-center justify-center">
           <div className="relative">
             <h1 className="text-center text-6xl">
-              <span className="text-yellow-500">LET'S FETCH HAPPINESS</span>
+              <span className="FontTwo text-yellow-500">
+                LET'S FETCH HAPPINESS
+              </span>
               <br />
-              <span className="text-purple-500">TOGETHER</span>
+              <span className="FontTwo text-purple-500">TOGETHER</span>
             </h1>
           </div>
           <div className="mt-8 space-x-4">
-            <button className="rounded border border-gray-300 bg-white px-4 py-2 shadow">
+            <button className="FontOne rounded border border-gray-300 bg-white px-4 py-2 shadow">
               Get in touch
             </button>
-            <button className="rounded border border-gray-300 bg-white px-4 py-2 shadow">
+            <button className="FontOne rounded border border-gray-300 bg-white px-4 py-2 shadow">
               See All Available Puppies
             </button>
           </div>
