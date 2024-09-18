@@ -185,7 +185,7 @@ export default function NavBar() {
             {/* Mobile menu */}
             <div
               className={`absolute right-0 top-[144px] z-40 h-[790px] w-full bg-white p-3 sm:hidden md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 ${
-                mobileMenuOpen ? "block" : ""
+                mobileMenuOpen ? "block" : "hidden"
               }`}
             >
               {/* menu items here */}
