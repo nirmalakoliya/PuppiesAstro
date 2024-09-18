@@ -19,8 +19,8 @@ import Footer from "../components/Footer"
   </head>
   <body>
      <main>
-       <TopHeading client:visible />
-       <NavBar />
+       <TopHeading client:load />
+       <NavBar client:visible />
        <slot />
        <Footer />
    </main>

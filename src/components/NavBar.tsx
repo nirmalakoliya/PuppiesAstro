@@ -127,12 +127,12 @@ export default function NavBar() {
                 className="FontOne flex items-center gap-2 text-sm font-medium text-black lg:text-base"
               >
                 About Us <FaAngleDown />
-                <div className="absolute left-0 hidden w-full bg-white shadow-lg group-hover:block sm:w-[18vw]">
+                <div className="absolute left-0 top-5 hidden w-full bg-white shadow-lg group-hover:block sm:w-[18vw]">
                   <main className="p-4">
                     <div className="space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                       <div className="flex flex-col space-x-4  md:flex-row">
                         <div className="flex-1">
-                          <h2>About Us</h2>
+                          <h2 className="relative bottom-1">About Us</h2>
                           <ul className="FontOne space-y-2">
                             <li>
                               <a href="#">Health Guarantee</a>
