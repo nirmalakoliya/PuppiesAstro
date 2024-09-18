@@ -28,7 +28,7 @@ export default function NavBar() {
                 Our Puppies <FaAngleDown />
               </a>
               {/* Dropdown content */}
-              <div className="absolute left-0 z-50 hidden  w-full bg-white shadow-lg group-hover:block sm:w-[90vw] md:w-[80vw] lg:w-[75vw] xl:w-[98vw]">
+              <div className="absolute left-0 z-50 hidden w-full bg-white shadow-lg group-hover:block sm:w-[90vw] md:w-[80vw] lg:w-[75vw] xl:w-[98vw]">
                 <main className="p-4">
                   <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                     {/* Categories */}
@@ -184,14 +184,17 @@ export default function NavBar() {
 
             {/* Mobile menu */}
             <div
-              className={`absolute right-0 top-40 z-40 h-screen w-full bg-white p-2 sm:hidden ${
-                mobileMenuOpen ? "block" : "hidden"
+              className={`absolute right-0 top-[144px] z-40 h-[790px] w-full bg-white p-3 sm:hidden md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 ${
+                mobileMenuOpen ? "block" : ""
               }`}
             >
               {/* menu items here */}
-              <div className="space-y-2">
-                <div className="flex items-center justify-between">
-                  <span>OUR PUPPIES</span>
+              <hr className="relative bottom-3 border-black" />
+              <div className="FontTwo relative bottom-1 space-y-2 font-bold">
+                <div className="flex w-full items-center justify-between">
+                  <a href="#" className="w-full">
+                    OUR PUPPIES
+                  </a>
                   <FaAngleRight />
                 </div>
                 <div className="flex items-center justify-between">
@@ -204,8 +207,8 @@ export default function NavBar() {
                   <span>MEET ALL FUR BABIES</span>
                 </div>
               </div>
-              <hr className="border-gray-300" />
-              <div className="space-y-2">
+              <hr className="relative border-black" />
+              <div className="FontTwo relative top-2 space-y-2 font-bold ">
                 <div className="flex items-center justify-between">
                   <span>FINANCING</span> <FaAngleRight />
                 </div>
@@ -216,42 +219,47 @@ export default function NavBar() {
                   <span>CONTACT US</span>
                 </div>
               </div>
-              <hr className="border-gray-300" />
-              <div className="space-y-2">
-                <div className="font-bold">OUR LOCATIONS</div>
+              <hr className="FontOne relative top-3 border-black" />
+              <div className="FontOne relative top-5 space-y-2 ">
+                <div className="FontTwo font-bold">OUR LOCATIONS</div>
                 <div className="space-y-2">
                   <div className="space-y-1">
                     <div className="flex items-center justify-between">
-                      <span>
-                        <FaAngleUp />
+                      <span className="flex gap-1">
+                        <FaAngleUp className="relative top-[2px]" />
                         Ft Lauderdale
                       </span>
                     </div>
-                    <div className="rounded-md border p-2">
+                    <div className="rounded-2 border border-black p-2">
                       <div>(855) 775-0552</div>
                       <div>4157 N State Rd 7 Lauderdale Lakes, FL 33319</div>
                       <div>Every Day 11:00AM - 9:00PM</div>
                       <div className="flex space-x-4 text-purple-600">
                         <a href="#">
-                          View puppies
-                          <FaArrowTrendUp />
+                          <span className="flex gap-2">
+                            View puppies
+                            <FaArrowTrendUp className="relative top-[3px]" />
+                          </span>
                         </a>
+
                         <a href="#">
-                          Get directions
-                          <FaArrowTrendUp />
+                          <span className="flex gap-2">
+                            Get directions
+                            <FaArrowTrendUp className="relative top-[3px]" />
+                          </span>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>
-                      <FaAngleUp /> Miami
+                    <span className="flex gap-1">
+                      <FaAngleUp className="relative top-[3px]" /> Miami
                     </span>
                     <i className="fas fa-chevron-down"></i>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>
-                      <FaAngleUp /> North Miami
+                    <span className="flex gap-1">
+                      <FaAngleUp className="relative top-[3px]" /> North Miami
                     </span>
                     <i className="fas fa-chevron-down"></i>
                   </div>
