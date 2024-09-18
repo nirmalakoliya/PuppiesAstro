@@ -1,35 +1,3 @@
-/*! DogVideo page css */
-.video-docker {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.video-docker video {
-  width: 1445px;
-  height: 631px;
-  object-fit: cover;
-}
-
-/*! Make the SVG full screen css */
-.video-docker svg {
-  width: 100%;
-  height: 170%;
-}
-
-.video-docker svg {
-  width: 100%;
-  height: 170%;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-@media only screen and (max-width: 768px) {
-  .video-docker svg {
-    height: 170%;
-    width: 250%;
-  }
-}
-
 /*! DogsDetail page css */
 .sectionOne {
   background: url(https://img.freepik.com/premium-photo/minimalistic-pattern-featuring-cute-kitten-paw-prints-soft-pastel-background_1287624-29246.jpg);

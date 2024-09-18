@@ -4,7 +4,7 @@ export default function DogVideo() {
   return (
     <>
       <section className="relative top-1 flex h-[60vh] flex-col items-center justify-center px-4 py-0 text-center text-white">
-        <div className="video-docker absolute inset-0 h-full w-full overflow-hidden">
+        <div className="video-docker absolute inset-0 left-0 top-0 h-full w-full overflow-hidden">
           <video
             className="absolute left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover"
             autoPlay
@@ -16,6 +16,7 @@ export default function DogVideo() {
               type="video/mp4"
             />
           </video>
+
           <div className="absolute inset-0">
             <svg
               width="100%"
@@ -24,6 +25,7 @@ export default function DogVideo() {
               viewBox="0 0 940 700"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="h-[170%] w-[250%] bg-black bg-opacity-60 md:h-[170%] md:w-full"
             >
               <path
                 fillRule="evenodd"
