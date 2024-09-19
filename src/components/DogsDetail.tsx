@@ -1,7 +1,57 @@
+import { useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
+import { FaAngleRight, FaAngleUp } from "react-icons/fa";
 
 export default function DogsDetail() {
+  const [filterMenu, setFilterMenu] = useState(false);
+
+  const handleFilterMenu = () => {
+    console.log("Menu button clicked");
+    setFilterMenu(!filterMenu);
+  };
+
+  const [selectedCount, setSelectedCount] = useState(3);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedItems, setSelectedItems] = useState([
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+  ]);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const toggleItem = (index: any) => {
+    const newSelectedItems = [...selectedItems];
+    newSelectedItems[index] = !newSelectedItems[index];
+    setSelectedItems(newSelectedItems);
+    setSelectedCount(newSelectedItems.filter((item) => item).length);
+  };
+
+  const selectAll = () => {
+    setSelectedItems(new Array(selectedItems.length).fill(true));
+    setSelectedCount(selectedItems.length);
+  };
+
+  const clearFilter = () => {
+    setSelectedItems(new Array(selectedItems.length).fill(false));
+    setSelectedCount(0);
+  };
+
+  const handleSelectAll = (event: any) => {
+    if (event.target.checked) {
+      selectAll();
+    } else {
+      clearFilter();
+    }
+  };
+
   return (
     <>
       <div className="FontThree">
@@ -10,22 +60,174 @@ export default function DogsDetail() {
           <div className="flex items-center justify-center space-x-2 lg:justify-between lg:space-x-4">
             {/* <!-- Filter by section --> */}
             <div className="flex items-center space-x-2">
-              <span className="text-sm font-semibold lg:text-base">
+              <button
+                className="text-sm font-semibold lg:text-base"
+                onClick={handleFilterMenu}
+              >
                 FILTER BY
-              </span>
+              </button>
+              <div className="flex w-5 items-center justify-center rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                1
+              </div>
               <div className="lg:hidden">
                 <IoIosArrowDown size={20} />
               </div>
+
+              {/* Mobile menu */}
+              {filterMenu && (
+                <div
+                  className="absolute left-[-8px] top-0 z-10 h-[58rem] w-full bg-white p-4 lg:hidden"
+                  role="menu"
+                >
+                  <div className="">
+                    <div className="mb-6 flex items-center justify-between border-b border-black pb-2">
+                      <span className="font-bold">
+                        FILTER BY
+                        <span className="rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                          8
+                        </span>
+                      </span>
+
+                      <IoCloseSharp onClick={handleFilterMenu} />
+                    </div>
+                    <div className="mb-6 flex items-center justify-between border-b border-black py-2 font-bold">
+                      <span>
+                        LOCATION
+                        <span className="rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                          1
+                        </span>
+                      </span>
+                      <FaAngleRight />
+                    </div>
+
+                    <div className="mb-6 mt-4 w-[393px]">
+                      <div className="flex items-center justify-between border-b border-black pb-2">
+                        <div className="flex items-center">
+                          <span className="font-bold" onClick={toggleDropdown}>
+                            BREED
+                          </span>
+                          <span className="ml-2 rounded bg-yellow-300 px-2 text-black">
+                            {selectedCount}
+                          </span>
+                        </div>
+                        <button onClick={toggleDropdown}>
+                          {isOpen ? <FaAngleUp /> : <FaAngleRight />}
+                        </button>
+                      </div>
+
+                      <div
+                        className={`mt-2 ${
+                          isOpen ? "h-fit" : "h-0 overflow-hidden"
+                        } transition-all duration-1000`}
+                      >
+                        {selectedItems.map((isSelected, index) => (
+                          <div key={index} className="mb-2 flex items-center">
+                            <input
+                              type="checkbox"
+                              checked={isSelected}
+                              onChange={() => toggleItem(index)}
+                              className="form-checkbox h-4 w-4 text-yellow-500"
+                            />
+                            <span className="ml-2">BREED NAMING</span>
+                          </div>
+                        ))}
+                        <div className="flex items-center justify-between border-t border-black pt-2">
+                          <div className="flex items-center">
+                            <input
+                              type="checkbox"
+                              checked={selectedItems.every((item) => item)}
+                              onChange={handleSelectAll}
+                              className="form-checkbox h-4 w-4 text-yellow-500"
+                            />
+                            <span className="ml-2">SELECT ALL</span>
+                          </div>
+                          <button
+                            onClick={clearFilter}
+                            className="flex gap-2 text-black"
+                          >
+                            <VscChromeClose className="relative top-1" />
+                            CLEAR FILTER
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mb-6 flex items-center justify-between border-b border-black py-2 font-bold">
+                      <span>
+                        PRICE
+                        <span className="rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                          1
+                        </span>
+                      </span>
+                      <FaAngleRight />
+                    </div>
+                    <div className="mb-6 flex items-center justify-between border-b border-black py-2 font-bold">
+                      <span>
+                        AVAILABILITY
+                        <span className="rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                          1
+                        </span>
+                      </span>
+                      <FaAngleRight />
+                    </div>
+                    <div className="border-b border-black py-2 pb-6">
+                      <span className="font-bold">SPECIALS</span>
+                      <div className="mt-2">
+                        <label className="flex items-center font-bold">
+                          <input type="checkbox" className="mr-2" />
+                          BOY
+                        </label>
+                        <label className="mt-2 flex items-center">
+                          <input type="checkbox" className="mr-2" checked />
+                          <span className="font-bold">GIRL</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div className="mt-6 border-b border-black py-2 pb-6">
+                      <span className="font-bold">GENDER</span>
+                      <div className="mt-2">
+                        <label className="flex items-center font-bold">
+                          <input type="checkbox" className="mr-2" />
+                          NEW ARRIVALS
+                        </label>
+                        <label className="mt-2 flex items-center">
+                          <input type="checkbox" className="mr-2" checked />
+                          <span className="font-bold">
+                            LIMITED TIME SPECIAL
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div className="sticky bottom-0 left-0 right-0 flex justify-between bg-white p-4 shadow">
+                      <button
+                        className="border bg-white px-4 py-2 shadow"
+                        onClick={handleFilterMenu}
+                      >
+                        Clear all filter
+                      </button>
+                      <button
+                        className="border bg-purple-200 px-4 py-2 shadow"
+                        onClick={handleFilterMenu}
+                      >
+                        Apply filters
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
 
-            {/* <!-- Divider - visible only on small screens --> */}
+            {/* <!--Center Divider - visible only on small screens --> */}
             <div className="h-6 w-px bg-gray-400 lg:hidden"></div>
 
             {/* <!-- Sort by section --> */}
             <div className="flex items-center space-x-2">
-              <span className="text-sm font-semibold lg:text-base">
+              <button className="text-sm font-semibold lg:text-base">
                 SORT BY
-              </span>
+              </button>
+              <div className="flex w-5 items-center justify-center rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                1
+              </div>
             </div>
             <div className="lg:hidden">
               <IoIosArrowDown />
