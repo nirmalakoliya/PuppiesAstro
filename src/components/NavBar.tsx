@@ -191,12 +191,13 @@ export default function NavBar() {
               {/* menu items here */}
               <hr className="relative bottom-3 border-black" />
               <div className="FontTwo relative bottom-1 space-y-2 font-bold">
-                <div className="flex w-full items-center justify-between">
+                <span className="flex w-full items-center justify-between">
                   <a href="#" className="w-full">
                     OUR PUPPIES
                   </a>
                   <FaAngleRight />
-                </div>
+                </span>
+
                 <div className="flex items-center justify-between">
                   <span>SPECIAL DEALS</span>
                 </div>
@@ -255,13 +256,11 @@ export default function NavBar() {
                     <span className="flex gap-1">
                       <FaAngleUp className="relative top-[3px]" /> Miami
                     </span>
-                    <i className="fas fa-chevron-down"></i>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="flex gap-1">
                       <FaAngleUp className="relative top-[3px]" /> North Miami
                     </span>
-                    <i className="fas fa-chevron-down"></i>
                   </div>
                 </div>
               </div>
