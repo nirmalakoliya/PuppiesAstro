@@ -3,10 +3,12 @@ import { VscChromeClose } from "react-icons/vsc";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaAngleRight, FaAngleUp } from "react-icons/fa";
+import { RiCheckLine } from "react-icons/ri";
 
 export default function DogsDetail() {
   const [filterMenu, setFilterMenu] = useState(false);
   const [locationOpen, setLocationOpen] = useState(false);
+  const [sortbyOpen, setSortbyOpen] = useState(false);
 
   const handleFilterMenu = () => {
     console.log("Menu button clicked");
@@ -16,6 +18,11 @@ export default function DogsDetail() {
   const handleLocationMenu = () => {
     console.log("Location button clicked");
     setLocationOpen(!locationOpen);
+  };
+
+  const handleSortbyMenu = () => {
+    console.log("Sort by button clicked");
+    setSortbyOpen(!sortbyOpen);
   };
 
   const [selectedCount, setSelectedCount] = useState(3);
@@ -227,17 +234,37 @@ export default function DogsDetail() {
             <div className="h-6 w-px bg-gray-400 lg:hidden"></div>
 
             {/* <!-- Sort by section --> */}
-            <div className="flex items-center space-x-2">
-              <button className="text-sm font-semibold lg:text-base">
+            <div className="relative flex items-center space-x-2">
+              <button
+                className="flex gap-2 text-sm font-semibold lg:text-base"
+                onClick={handleSortbyMenu}
+              >
                 SORT BY
+                <div className="flex w-5 items-center justify-center rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                  1
+                </div>
+                <div className="relative top-0 lg:hidden">
+                  <IoIosArrowDown size={20} />
+                </div>
               </button>
-              <div className="flex w-5 items-center justify-center rounded-md bg-yellow-400 text-[15px] lg:hidden">
-                1
-              </div>
             </div>
-            <div className="lg:hidden">
-              <IoIosArrowDown />
-            </div>
+          </div>
+
+          <div
+            className={`absolute z-40 ${
+              sortbyOpen ? "block" : "hidden"
+            } inset-x-56 top-full w-48 border bg-white p-4 lg:hidden`}
+          >
+            <ul className="space-y-2">
+              <li className="text-gray-800">Featured</li>
+              <li className="flex items-center justify-between text-gray-800">
+                Age: Young to Old
+                <RiCheckLine />
+              </li>
+              <li className="text-gray-800">Age: Old to Young</li>
+              <li className="text-gray-800">Price: Low to High</li>
+              <li className="text-gray-800">Price: High to Low</li>
+            </ul>
           </div>
 
           {/* <!-- Full content visible only on large screens --> */}
