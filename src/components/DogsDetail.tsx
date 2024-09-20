@@ -74,17 +74,17 @@ export default function DogsDetail() {
             {/* <!-- Filter by section --> */}
             <div className="flex items-center space-x-2">
               <button
-                className="text-sm font-semibold lg:text-base"
+                className="flex gap-1 text-sm font-semibold lg:text-base"
                 onClick={handleFilterMenu}
               >
                 FILTER BY
+                <div className="flex w-5 items-center justify-center rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                  1
+                </div>
+                <div className="lg:hidden">
+                  <IoIosArrowDown size={20} />
+                </div>
               </button>
-              <div className="flex w-5 items-center justify-center rounded-md bg-yellow-400 text-[15px] lg:hidden">
-                1
-              </div>
-              <div className="lg:hidden">
-                <IoIosArrowDown size={20} />
-              </div>
 
               {/* Mobile menu */}
               {filterMenu && (
