@@ -25,7 +25,7 @@ export default function DogVideo() {
               preserveAspectRatio="none"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-[100%] w-[248%] bg-black bg-opacity-60 md:h-[101%] md:w-full"
+              className="h-[100%] w-[] bg-black bg-opacity-60 md:h-[100%] md:w-full"
             >
               <path
                 fillRule="evenodd"
