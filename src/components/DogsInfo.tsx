@@ -1,9 +1,6 @@
 export default function DogsInfo() {
   return (
     <>
-      {/* Add space at the top */}
-      <div className="mt-16"></div>
-
       {/* Sticky Image, hidden on small screens */}
       <div className="sticky top-0 mb-[-15rem] hidden h-64 w-96 sm:block">
         <img
@@ -14,7 +11,7 @@ export default function DogsInfo() {
       </div>
 
       {/* Section 1 */}
-      <section className="bg-[#F4F4F4] p-8 py-16">
+      <section className="bg-[#f3efe6] p-8 py-16">
         <div className="flex flex-col items-center justify-center">
           <div className="flex md:flex-row">
             {/* Text content */}
@@ -86,7 +83,7 @@ export default function DogsInfo() {
       </section>
 
       {/* Section 2 */}
-      <section className="bg-[#FAF0E6] p-8 py-16">
+      <section className="bg-[#ffffff] p-8 py-16">
         <div className="flex flex-col items-center justify-center">
           <div className="flex md:flex-row">
             {/* Text content */}
@@ -212,7 +209,7 @@ export default function DogsInfo() {
       </section>
 
       {/* section 3*/}
-      <section className="bg-[#FDEAE5] p-8 py-16">
+      <section className="bg-[#f7e7e4] p-8 py-16">
         <div className="flex flex-col items-center justify-center">
           <div className="flex md:flex-row">
             {/* Text content */}
@@ -319,7 +316,7 @@ export default function DogsInfo() {
       </section>
 
       {/* Section 4 */}
-      <section className="bg-[#7D4E9E] p-8 py-16">
+      <section className="bg-[#7a5894] p-8 py-16">
         <div className="flex flex-col items-center justify-center">
           <div className="flex md:flex-row">
             {/* Text content */}
@@ -443,7 +440,7 @@ export default function DogsInfo() {
       </section>
 
       {/* Section 5 */}
-      <section className="bg-[#f5f5dc] p-8 py-16">
+      <section className="bg-[#f3efe6] p-8 py-16">
         <div className="flex flex-col items-center justify-center">
           <div className="flex md:flex-row">
             <div className="flex flex-col md:ml-auto md:w-[71%]">
@@ -500,7 +497,7 @@ export default function DogsInfo() {
         </div>
       </section>
 
-      <section className="bg-[#E2E2B6] pb-44 pt-32">
+      <section className="border-b border-black bg-[#fcfbf8] pb-44 pt-32">
         <div className="hidden md:block md:w-1/3"></div>
         <div className="flex flex-col items-center justify-center">
           <div>
