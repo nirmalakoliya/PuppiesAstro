@@ -7,10 +7,20 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [puppiesMenu, setPuppiesMenu] = useState(false);
 
   const handleMobileMenu = () => {
     console.log("Menu button clicked");
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const handlePuppiesMenu = () => {
+    console.log("Puppies button clicked");
+    setPuppiesMenu(!puppiesMenu);
+  };
+
+  const handleGoBack = () => {
+    setPuppiesMenu(false);
   };
 
   return (
@@ -174,7 +184,7 @@ export default function NavBar() {
             </span>
 
             {/* Mobile menu button */}
-            <button className="block p-4 sm:hidden" onClick={handleMobileMenu}>
+            <button className="block p-2 sm:hidden" onClick={handleMobileMenu}>
               {mobileMenuOpen ? (
                 <AiOutlineClose size={30} className="text-black" />
               ) : (
@@ -184,30 +194,81 @@ export default function NavBar() {
 
             {/* Mobile menu */}
             <div
-              className={`absolute right-0 top-[144px] z-40 h-[790px] w-full bg-white p-3 sm:hidden md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 ${
+              className={`absolute right-0 top-[144px] z-40 h-[790px] w-full overflow-hidden bg-white p-3 sm:hidden md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 ${
                 mobileMenuOpen ? "block" : "hidden"
               }`}
             >
               {/* menu items here */}
               <hr className="relative bottom-3 border-black" />
-              <div className="FontTwo relative bottom-1 space-y-2 font-bold">
-                <span className="flex w-full items-center justify-between">
-                  <a href="#" className="w-full">
-                    OUR PUPPIES
-                  </a>
-                  <FaAngleRight />
-                </span>
+              <div className="FontTwo relative bottom-1 space-y-2">
+                <div>
+                  {puppiesMenu ? (
+                    <div className="xs:p-2 absolute left-0 top-[-15px] z-10 h-[790px] w-full  bg-white p-4 shadow-md sm:p-4 md:p-6 lg:p-8">
+                      <button
+                        className="xs:w-full FontOne mb-4 rounded-full border border-black px-4 py-2 sm:w-full md:inline-block lg:inline-block"
+                        onClick={handleGoBack}
+                      >
+                        GO BACK
+                      </button>
+                      <h1 className="FontTwo xs:text-lg mb-2 text-2xl font-bold sm:text-xl">
+                        OUR PUPPIES
+                      </h1>
+                      <hr className="mb-4 border-t border-black" />
+                      <button className="xs:w-full FontOne mb-4 w-full rounded bg-purple-200 px-4 py-2  text-black shadow-md sm:w-full md:w-auto lg:w-auto">
+                        See all Puppies!
+                      </button>
+                      <div className="xs:flex flex-wrap sm:flex md:flex lg:flex">
+                        <div className="xs:w-full sm:w-full md:w-1/2 lg:w-1/2">
+                          <h2 className="xs:text-sm FontTwo FontOne mb-2 text-lg font-bold sm:text-base">
+                            BREEDS
+                          </h2>
+                          <ul className="FontOne mb-4">
+                            <li className="mb-1">Designer Hybrid</li>
+                            <li className="mb-1">Purebred</li>
+                            <li className="mb-1">All Breeds</li>
+                          </ul>
+                        </div>
+                        <div className="xs:w-full sm:w-full md:w-1/2 lg:w-1/2">
+                          <h2 className="xs:text-sm FontTwo mb-2 text-lg font-bold sm:text-base">
+                            CHARACTERISTICS
+                          </h2>
+                          <ul className="FontOne">
+                            <li className="mb-1">
+                              Hypoallergenic And Low Shed
+                            </li>
+                            <li className="mb-1">Large Sized</li>
+                            <li className="mb-1">Medium Sized</li>
+                            <li className="mb-1">Small Sized</li>
+                            <li className="mb-1">New Arrival</li>
+                            <li className="mb-1">Special Deals</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <span
+                      className="xs:flex flex w-full cursor-pointer items-center justify-between sm:flex"
+                      onClick={handlePuppiesMenu}
+                    >
+                      <a href="#" className="w-full font-bold">
+                        OUR PUPPIES
+                      </a>
+                      <FaAngleRight />
+                    </span>
+                  )}
+                </div>
 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between  font-bold">
                   <span>SPECIAL DEALS</span>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between font-bold">
                   <span>NEW ARRIVALS</span>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between font-bold">
                   <span>MEET ALL FUR BABIES</span>
                 </div>
               </div>
+
               <hr className="relative border-black" />
               <div className="FontTwo relative top-2 space-y-2 font-bold ">
                 <div className="flex items-center justify-between">
