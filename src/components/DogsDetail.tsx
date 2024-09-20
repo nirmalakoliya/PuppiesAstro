@@ -6,10 +6,16 @@ import { FaAngleRight, FaAngleUp } from "react-icons/fa";
 
 export default function DogsDetail() {
   const [filterMenu, setFilterMenu] = useState(false);
+  const [locationOpen, setLocationOpen] = useState(false);
 
   const handleFilterMenu = () => {
     console.log("Menu button clicked");
     setFilterMenu(!filterMenu);
+  };
+
+  const handleLocationMenu = () => {
+    console.log("Location button clicked");
+    setLocationOpen(!locationOpen);
   };
 
   const [selectedCount, setSelectedCount] = useState(3);
@@ -55,7 +61,7 @@ export default function DogsDetail() {
   return (
     <>
       <div className="FontThree">
-        <section className="relative top-4 border-2 bg-white p-2 lg:p-4">
+        <section className="relative border border-black bg-white p-2 lg:p-4">
           {/* <!-- Filter By and Sort By for small screens --> */}
           <div className="flex items-center justify-center space-x-2 lg:justify-between lg:space-x-4">
             {/* <!-- Filter by section --> */}
@@ -235,11 +241,58 @@ export default function DogsDetail() {
           </div>
 
           {/* <!-- Full content visible only on large screens --> */}
-          <div className=" hidden space-x-2 lg:flex lg:items-center lg:justify-between lg:space-x-4">
+          <div className="hidden space-x-2 lg:flex lg:items-center lg:justify-between lg:space-x-4">
             {/* <!-- Location filter --> */}
-            <button className="flex items-center justify-center gap-2 rounded border px-3 py-1 text-sm font-semibold text-gray-800">
+            <button
+              className="flex items-center justify-center gap-2 rounded border px-3 py-1 text-sm font-semibold text-gray-800"
+              onClick={handleLocationMenu}
+            >
               LOCATION <IoIosArrowDown />
             </button>
+
+            <div
+              className={`FontTwo absolute z-40 ${
+                locationOpen ? "block" : "hidden"
+              } w-full bg-white lg:left-[8px] lg:top-[95%] lg:mt-2 lg:w-64 lg:rounded lg:border lg:border-gray-300 lg:p-2`}
+            >
+              <div className="flex items-center justify-between border-b border-black pb-2">
+                <span className="text-sm text-gray-400">LOCATION</span>
+                <button className="flex gap-1 text-sm text-gray-600">
+                  <VscChromeClose className="relative top-1" /> CLEAR FILTER
+                </button>
+              </div>
+              <div className="mt-2">
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    checked
+                    className="form-checkbox text-yellow-500"
+                  />
+                  <span className="text-sm text-gray-800">FT LAUDERDALE</span>
+                </label>
+                <label className="mt-2 flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    className="form-checkbox text-gray-500"
+                  />
+                  <span className="text-sm text-gray-800">NORTH MIAMI</span>
+                </label>
+                <label className="mt-2 flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    className="form-checkbox text-gray-500"
+                  />
+                  <span className="text-sm text-gray-800">MIAMI</span>
+                </label>
+                <label className="mt-2 flex items-center space-x-2 border-t border-black">
+                  <input
+                    type="checkbox"
+                    className="form-checkbox text-gray-500"
+                  />
+                  <span className="text-sm text-gray-800">SELECT ALL</span>
+                </label>
+              </div>
+            </div>
 
             {/* <!-- Price filter --> */}
             <button className="flex items-center justify-center gap-2 rounded border px-3 py-1 text-sm font-semibold text-gray-800">
