@@ -356,17 +356,17 @@ export default function DogsDetail() {
 
         {/* Dog section 1 */}
         <section>
-          <div className="relative top-8 flex w-full flex-col border-2 md:flex-row">
-            <div className="sectionOne h-auto w-full md:w-1/3">
-              <div className="p-4 md:p-8">
-                <h1 className="mb-4 text-center text-xl font-bold text-gray-800 md:text-left md:text-3xl">
+          <div className="relative flex w-full flex-col md:flex-row">
+            <div className="h-auto w-full border-r  border-black bg-[#f3efe6] md:w-1/3">
+              <div className=" p-4 md:p-8">
+                <h1 className="FontOne mb-4 text-center text-xl font-bold text-gray-800 md:text-left md:text-3xl">
                   ARRANGE A VIRTUAL PUPPY MEET AND GREET
                 </h1>
-                <p className="mb-4 text-center text-sm text-gray-600 md:text-left md:text-lg">
+                <p className="FontTwo mb-4 text-center text-sm text-gray-600 md:text-left md:text-lg">
                   We are excited to offer you the opportunity to meet our
                   adorable puppies through a virtual meet and greet!
                 </p>
-                <button className="mx-auto block rounded border border-gray-400 bg-white px-3 py-2 text-sm font-semibold text-gray-800 shadow md:mx-0 md:px-4 md:py-2">
+                <button className="FontTwo mx-auto block rounded border border-gray-400 bg-white px-3 py-2 text-sm font-semibold shadow  hover:bg-purple-500 hover:text-white md:mx-0 md:px-4 md:py-2">
                   Arrange now
                 </button>
               </div>
@@ -374,36 +374,36 @@ export default function DogsDetail() {
 
             <div className="flex w-full flex-col md:w-2/3 md:flex-row">
               {/*  Card 1 */}
-              <div className="flex h-auto w-full flex-col  bg-white shadow-lg md:w-1/2">
+              <div className="flex h-auto w-full flex-col  border-r border-black bg-white shadow-lg md:w-1/2">
                 <img
                   src="/Images/dogDetail1.jpg"
                   alt="Golden Retriever puppy wearing a captain's hat"
                   className="h-[26rem] w-full object-cover  md:h-[30rem]"
                 />
 
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON - $2,999
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
               </div>
 
               {/* Card 2 */}
-              <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+              <div className="flex h-auto w-full flex-col border-r border-black bg-white shadow-lg md:w-1/2">
                 <img
                   src="/Images/dogDetail2.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
                   className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON -
                     <span className="text-red-500">RECENTLY ADOPTED</span>
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
@@ -414,25 +414,25 @@ export default function DogsDetail() {
 
         {/* Dog section 2 */}
         <section>
-          <div className="relative top-10 flex w-full flex-col border-2  md:flex-row">
+          <div className=" flex w-full flex-col  md:flex-row">
             {/*  Card 1 */}
             <div className="h-auto w-full md:w-1/3">
-              <div className="md:w-2/1 flex h-auto w-full flex-col border border-gray-300 bg-white  shadow-lg">
+              <div className="md:w-2/1 flex h-auto w-full flex-col border-r border-t border-black bg-white shadow-lg">
                 <div className="relative">
                   <img
                     src="/Images/dogDetail3.jpg"
                     alt="Golden Retriever puppy wearing a captain's hat"
                     className="h-[26rem] w-full object-cover md:h-[30rem]"
                   />
-                  <div className="font-roboto absolute right-4 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
+                  <div className="font-roboto FontTwo absolute right-4 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
                     NEW ARRIVAL
                   </div>
                 </div>
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON - $2,999
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
@@ -441,36 +441,36 @@ export default function DogsDetail() {
 
             <div className="flex w-full flex-col md:w-2/3 md:flex-row">
               {/* Card 2 */}
-              <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+              <div className="flex h-auto w-full flex-col border-r border-black bg-white shadow-lg md:w-1/2">
                 <img
                   src="/Images/dogDetail4.jpg"
                   alt="Golden Retriever puppy wearing a captain's hat"
                   className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON -
                     <span className="text-red-500">RECENTLY ADOPTED</span>
                   </h2>
 
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
               </div>
 
               {/* Card 3 */}
-              <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+              <div className="flex h-auto w-full flex-col border-r border-black bg-white shadow-lg md:w-1/2">
                 <img
                   src="/Images/dogDetail5.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
                   className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON - $2,999
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
@@ -481,37 +481,37 @@ export default function DogsDetail() {
 
         {/* Dog section 3 */}
         <section>
-          <div className="relative top-12 flex w-full flex-col border-2  md:flex-row">
+          <div className="flex w-full flex-col md:flex-row">
             <div className="flex w-full flex-col md:flex-row">
-              <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+              <div className="flex h-auto w-full flex-col border-t border-black bg-white shadow-lg md:w-1/2">
                 <img
                   src="/Images/dogDetail6.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
                   className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-b border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON - <span className="line-through">$2,999</span>{" "}
                     <span className="text-red-500">$1,295</span>
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
               </div>
 
-              <div className="sectionTwo b h-auto w-full">
+              <div className="h-auto w-full border border-black bg-[#d9e3a2]">
                 <div className="flex items-center justify-center">
                   <div className="flex flex-col items-center rounded-lg p-12 md:flex-row">
                     <div className="text-center md:w-1/2 md:text-left">
-                      <h1 className="mb-4 text-4xl font-bold text-[#9b6bcb]">
+                      <h1 className="FontTwo mb-4 text-4xl font-bold text-[#9b6bcb]">
                         UP TO 100% FINANCING AVAILABLE
                       </h1>
-                      <p className="mb-4 font-bold text-[#333]">
+                      <p className="FontOne mb-4 font-bold text-[#333]">
                         Apply now to get your available offers for Low Monthly
                         Puppy Payment Plans
                       </p>
-                      <button className="rounded bg-white px-4 py-2 font-bold text-black shadow">
+                      <button className="FontOne rounded border border-gray-400 bg-white px-4 py-2 font-bold text-black shadow hover:bg-purple-500 hover:text-white">
                         Book now
                       </button>
                     </div>
@@ -534,10 +534,10 @@ export default function DogsDetail() {
 
         {/* Dog section 4*/}
         <section>
-          <div className="relative top-14 flex w-full flex-col border-2  md:flex-row">
+          <div className="flex w-full flex-col md:flex-row">
             {/*  Card 1 */}
             <div className="h-auto w-full md:w-1/3">
-              <div className="md:w-2/1 flex h-auto w-full flex-col border border-gray-300 bg-white  shadow-lg">
+              <div className="md:w-2/1 flex h-auto w-full flex-col border-r border-black bg-white shadow-lg">
                 <div className="relative">
                   <img
                     src="/Images/dogDetail8.jpg"
@@ -546,10 +546,10 @@ export default function DogsDetail() {
                   />
                 </div>
                 <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON - $2,999
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
@@ -558,40 +558,40 @@ export default function DogsDetail() {
 
             <div className="flex w-full flex-col md:w-2/3 md:flex-row">
               {/* Card 2 */}
-              <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+              <div className="flex h-auto w-full flex-col border-r border-black bg-white shadow-lg md:w-1/2">
                 <div className="relative">
                   <img
                     src="/Images/dogDetail9.jpg"
                     alt="Golden Retriever puppy wearing a captain's hat"
                     className="h-[26rem] w-full object-cover md:h-[30rem]"
                   />
-                  <div className="font-roboto absolute right-3 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
+                  <div className="FontTwo absolute right-3 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
                     SPECIAL OFFER
                   </div>
                 </div>
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
-                    FENTON - <span className="line-through">$2,999</span>{" "}
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
+                    FENTON - <span className="line-through">$2,999</span>
                     <span className="text-red-500">$1,295</span>
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
               </div>
 
               {/* Card 3 */}
-              <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+              <div className="flex h-auto w-full flex-col border-r border-black bg-white shadow-lg md:w-1/2">
                 <img
                   src="/Images/dogDetail10.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
                   className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON - $2,999
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
@@ -602,19 +602,19 @@ export default function DogsDetail() {
 
         {/* Dog section 5 */}
         <section>
-          <div className="relative top-16 flex w-full flex-col border-2  md:flex-row">
+          <div className="flex w-full flex-col border border-black md:flex-row">
             <div className="flex w-full flex-col md:flex-row">
-              <div className="sectionThree h-auto w-full">
+              <div className="h-auto w-full border-r border-black bg-[#ecd79d]">
                 <div className="flex items-center justify-center">
                   <div className="flex flex-col items-center rounded-lg  p-12 md:flex-row">
                     <div className="text-center md:w-1/2 md:text-left">
-                      <h1 className="mb-4 text-4xl font-bold text-[#9b6bcb]">
+                      <h1 className="FontTwo mb-4 text-4xl font-bold text-[#9b6bcb]">
                         FEAL PUPPU OWNERS, REAL REVIEWS
                       </h1>
-                      <p className="mb-4  font-bold text-[#333]">
+                      <p className="FontOne mb-4 font-bold text-[#333]">
                         Browse our past client Google testimonials
                       </p>
-                      <button className="rounded  bg-white px-4 py-2 font-bold text-black shadow">
+                      <button className="FontOne rounded border border-gray-400 bg-white px-4 py-2 font-bold text-black shadow hover:bg-purple-500 hover:text-white">
                         Read reviews
                       </button>
                     </div>
@@ -631,17 +631,17 @@ export default function DogsDetail() {
                   </div>
                 </div>
               </div>
-              <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+              <div className="border- flex h-auto w-full flex-col bg-white shadow-lg md:w-1/2">
                 <img
                   src="/Images/dogDetail12.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
                   className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON - $2,999
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
@@ -652,10 +652,10 @@ export default function DogsDetail() {
 
         {/* Dog section 6*/}
         <section>
-          <div className="relative top-20 flex w-full flex-col border-2  md:flex-row">
+          <div className="flex w-full flex-col border-b border-black  md:flex-row">
             {/*  Card 1 */}
             <div className="h-auto w-full md:w-1/3">
-              <div className="md:w-2/1 flex h-auto w-full flex-col border border-gray-300 bg-white  shadow-lg">
+              <div className="md:w-2/1 flex h-auto w-full flex-col border-r border-black bg-white  shadow-lg">
                 <div className="relative">
                   <img
                     src="/Images/dogDetail13.jpg"
@@ -663,11 +663,11 @@ export default function DogsDetail() {
                     className="h-[26rem] w-full object-cover md:h-[30rem]"
                   />
                 </div>
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON - $2,999
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
@@ -676,40 +676,40 @@ export default function DogsDetail() {
 
             <div className="flex w-full flex-col md:w-2/3 md:flex-row">
               {/* Card 2 */}
-              <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+              <div className="flex h-auto w-full flex-col border-r border-black bg-white shadow-lg md:w-1/2">
                 <div className="relative">
                   <img
                     src="/Images/dogDetail14.jpg"
                     alt="Golden Retriever puppy wearing a captain's hat"
                     className="h-[26rem] w-full object-cover md:h-[30rem]"
                   />
-                  <div className="font-roboto absolute right-3 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
+                  <div className="FontTwo absolute right-3 top-2 rounded-lg border border-black bg-white px-2 py-1 text-xs font-bold">
                     NEW ARRIVAL
                   </div>
                 </div>
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON - $2,999
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
               </div>
 
               {/* Card 3 */}
-              <div className="flex h-auto w-full flex-col border border-gray-300 bg-white shadow-lg md:w-1/2">
+              <div className="flex h-auto w-full flex-col border-r border-black bg-white shadow-lg md:w-1/2">
                 <img
                   src="/Images/dogDetail15.jpg"
                   alt="Golden Retriever puppy with a yellow and black scarf"
                   className="h-[26rem] w-full object-cover md:h-[30rem]"
                 />
-                <div className="p-3 md:p-4">
-                  <h2 className="text-sm font-bold text-gray-800 md:text-base">
+                <div className="border-t border-black p-3 md:p-4">
+                  <h2 className="FontTwo text-sm font-bold text-gray-800 md:text-base">
                     FENTON -
                     <span className="text-red-500">RECENTLY ADOPTED</span>
                   </h2>
-                  <p className="text-xs text-gray-600 md:text-sm">
+                  <p className="FontOne text-xs text-gray-600 md:text-sm">
                     GOLDEN RETRIEVER, BOY
                   </p>
                 </div>
