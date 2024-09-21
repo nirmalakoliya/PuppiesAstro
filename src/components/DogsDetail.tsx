@@ -94,19 +94,19 @@ export default function DogsDetail() {
                 >
                   <div className="">
                     <div className="mb-6 flex items-center justify-between border-b border-black pb-2">
-                      <span className="font-bold">
+                      <span className="flex gap-1 font-bold">
                         FILTER BY
-                        <span className="rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                        <span className="ml-2 rounded-md bg-yellow-300 px-2 text-black lg:hidden">
                           8
                         </span>
                       </span>
 
-                      <IoCloseSharp onClick={handleFilterMenu} />
+                      <IoCloseSharp size={20} onClick={handleFilterMenu} />
                     </div>
                     <div className="mb-6 flex items-center justify-between border-b border-black py-2 font-bold">
-                      <span>
+                      <span className="flex gap-1 font-bold">
                         LOCATION
-                        <span className="rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                        <span className="ml-2 rounded-md bg-yellow-300 px-2 text-black lg:hidden">
                           1
                         </span>
                       </span>
@@ -114,16 +114,17 @@ export default function DogsDetail() {
                     </div>
 
                     <div className="mb-6 mt-4 w-[393px]">
-                      <div className="flex items-center justify-between border-b border-black pb-2">
+                      <div
+                        className="flex items-center justify-between border-b border-black pb-2"
+                        onClick={toggleDropdown}
+                      >
                         <div className="flex items-center">
-                          <span className="font-bold" onClick={toggleDropdown}>
-                            BREED
-                          </span>
-                          <span className="ml-2 rounded bg-yellow-300 px-2 text-black">
+                          <span className="font-bold">BREED</span>
+                          <span className="ml-2 rounded bg-yellow-300 px-2 font-bold text-black">
                             {selectedCount}
                           </span>
                         </div>
-                        <button onClick={toggleDropdown}>
+                        <button>
                           {isOpen ? <FaAngleUp /> : <FaAngleRight />}
                         </button>
                       </div>
@@ -137,6 +138,7 @@ export default function DogsDetail() {
                           <div key={index} className="mb-2 flex items-center">
                             <input
                               type="checkbox"
+                              readOnly
                               checked={isSelected}
                               onChange={() => toggleItem(index)}
                               className="form-checkbox h-4 w-4 text-yellow-500"
@@ -148,8 +150,9 @@ export default function DogsDetail() {
                           <div className="flex items-center">
                             <input
                               type="checkbox"
+                              readOnly
                               checked={selectedItems.every((item) => item)}
-                              onChange={handleSelectAll}
+                              onChange={(e) => handleSelectAll(e)}
                               className="form-checkbox h-4 w-4 text-yellow-500"
                             />
                             <span className="ml-2">SELECT ALL</span>
@@ -166,18 +169,18 @@ export default function DogsDetail() {
                     </div>
 
                     <div className="mb-6 flex items-center justify-between border-b border-black py-2 font-bold">
-                      <span>
+                      <span className="flex gap-1 font-bold">
                         PRICE
-                        <span className="rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                        <span className="ml-2 rounded-md bg-yellow-300 px-2 text-black lg:hidden">
                           1
                         </span>
                       </span>
                       <FaAngleRight />
                     </div>
                     <div className="mb-6 flex items-center justify-between border-b border-black py-2 font-bold">
-                      <span>
+                      <span className="flex gap-1 font-bold">
                         AVAILABILITY
-                        <span className="rounded-md bg-yellow-400 text-[15px] lg:hidden">
+                        <span className="ml-2 rounded-md bg-yellow-300 px-2 text-black lg:hidden">
                           1
                         </span>
                       </span>
@@ -187,11 +190,16 @@ export default function DogsDetail() {
                       <span className="font-bold">SPECIALS</span>
                       <div className="mt-2">
                         <label className="flex items-center font-bold">
-                          <input type="checkbox" className="mr-2" />
+                          <input type="checkbox" readOnly className="mr-2" />
                           BOY
                         </label>
                         <label className="mt-2 flex items-center">
-                          <input type="checkbox" className="mr-2" checked />
+                          <input
+                            type="checkbox"
+                            readOnly
+                            className="mr-2"
+                            checked
+                          />
                           <span className="font-bold">GIRL</span>
                         </label>
                       </div>
@@ -200,18 +208,24 @@ export default function DogsDetail() {
                       <span className="font-bold">GENDER</span>
                       <div className="mt-2">
                         <label className="flex items-center font-bold">
-                          <input type="checkbox" className="mr-2" />
+                          <input type="checkbox" readOnly className="mr-2" />
                           NEW ARRIVALS
                         </label>
                         <label className="mt-2 flex items-center">
-                          <input type="checkbox" className="mr-2" checked />
+                          <input
+                            type="checkbox"
+                            readOnly
+                            className="mr-2"
+                            checked
+                          />
                           <span className="font-bold">
                             LIMITED TIME SPECIAL
                           </span>
                         </label>
                       </div>
                     </div>
-                    <div className="sticky bottom-0 left-0 right-0 flex justify-between bg-white p-4 shadow">
+
+                    <div className="sticky bottom-0 left-0 right-0 mt-6 flex justify-between bg-white p-4 shadow">
                       <button
                         className="border bg-white px-4 py-2 shadow"
                         onClick={handleFilterMenu}
@@ -288,32 +302,40 @@ export default function DogsDetail() {
                   <VscChromeClose className="relative top-1" /> CLEAR FILTER
                 </button>
               </div>
+
               <div className="mt-2">
                 <label className="flex items-center space-x-2">
                   <input
                     type="checkbox"
+                    readOnly
                     checked
                     className="form-checkbox text-yellow-500"
                   />
                   <span className="text-sm text-gray-800">FT LAUDERDALE</span>
                 </label>
+
                 <label className="mt-2 flex items-center space-x-2">
                   <input
                     type="checkbox"
+                    readOnly
                     className="form-checkbox text-gray-500"
                   />
                   <span className="text-sm text-gray-800">NORTH MIAMI</span>
                 </label>
+
                 <label className="mt-2 flex items-center space-x-2">
                   <input
                     type="checkbox"
+                    readOnly
                     className="form-checkbox text-gray-500"
                   />
                   <span className="text-sm text-gray-800">MIAMI</span>
                 </label>
+
                 <label className="mt-2 flex items-center space-x-2 border-t border-black">
                   <input
                     type="checkbox"
+                    readOnly
                     className="form-checkbox text-gray-500"
                   />
                   <span className="text-sm text-gray-800">SELECT ALL</span>
@@ -338,11 +360,11 @@ export default function DogsDetail() {
               </span>
               <div className="flex items-center space-x-2">
                 <label className="flex items-center space-x-1">
-                  <input type="checkbox" className="form-checkbox" />
+                  <input type="checkbox" readOnly className="form-checkbox" />
                   <span className="text-sm">BOY</span>
                 </label>
                 <label className="flex items-center space-x-1">
-                  <input type="checkbox" className="form-checkbox" />
+                  <input type="checkbox" readOnly className="form-checkbox" />
                   <span className="text-sm">GIRL</span>
                 </label>
               </div>
@@ -355,11 +377,11 @@ export default function DogsDetail() {
               </span>
               <div className="flex items-center space-x-2">
                 <label className="flex items-center space-x-1">
-                  <input type="checkbox" className="form-checkbox" />
+                  <input type="checkbox" readOnly className="form-checkbox" />
                   <span className="text-sm">NEW ARRIVALS</span>
                 </label>
                 <label className="flex items-center space-x-1">
-                  <input type="checkbox" className="form-checkbox" />
+                  <input type="checkbox" readOnly className="form-checkbox" />
                   <span className="text-sm">LIMITED TIME SPECIAL</span>
                 </label>
               </div>
