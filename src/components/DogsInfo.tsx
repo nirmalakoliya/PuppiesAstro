@@ -2,11 +2,11 @@ export default function DogsInfo() {
   return (
     <>
       {/* Sticky Image, hidden on small screens */}
-      <div className="sticky top-0 mb-[-15rem] hidden h-64 w-96 sm:block">
+      <div className="sticky top-0 mb-[-15rem] hidden h-60 w-96 sm:block">
         <img
           src="/Images/DogInfo.png"
           alt="Illustration of a playful puppy"
-          className="relative left-5 top-12 h-64 w-64 md:h-auto md:w-auto"
+          className="relative left-5 top-12 hidden h-64 w-64 md:block md:h-64 md:w-56 lg:h-80 lg:w-72 xl:h-80 xl:w-80 2xl:h-[160%] 2xl:w-full"
         />
       </div>
 
