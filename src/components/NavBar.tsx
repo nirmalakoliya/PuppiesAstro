@@ -143,7 +143,9 @@ export default function NavBar() {
                   <div className="space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                     <div className="flex flex-col space-x-4  md:flex-row">
                       <div className="flex-1">
-                        <h2 className="relative bottom-1">About Us</h2>
+                        <a href="#" className="relative bottom-1">
+                          About Us
+                        </a>
                         <ul className="FontOne space-y-2">
                           <li>
                             <a href="#">Health Guarantee</a>
