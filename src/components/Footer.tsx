@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <>
       <div>
-        <div className="mx-auto bg-[#FFFBF5] p-4">
+        <div className="mx-auto bg-[#FFFBF5] p-4 md:p-6 lg:p-8">
           <div className="flex flex-col items-start justify-between border-b border-gray-300 pb-8 md:flex-row">
             <div className="w-full md:w-1/4">
               <h1 className="text-4xl font-bold">Forever Love Puppies</h1>
@@ -45,8 +45,8 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="mt-8 grid w-full grid-cols-2 gap-4 md:mt-0 md:w-3/4 md:grid-cols-4">
-              <div>
+            <div className="mt-8 flex w-full flex-wrap md:mt-0 md:w-3/4">
+              <div className="mb-8 w-full sm:w-1/2 lg:w-1/4">
                 <h2 className="FontTwo font-bold">OUR PUPPIES</h2>
                 <ul className="FontOne mt-4 space-y-2">
                   <li>Designer Hybrid</li>
@@ -61,7 +61,7 @@ export default function Footer() {
                 </ul>
               </div>
 
-              <div>
+              <div className="mb-8 w-full sm:w-1/2 lg:w-1/4">
                 <h2 className="FontTwo font-bold">ABOUT US</h2>
                 <ul className="FontOne mt-4 space-y-2">
                   <li>About Us</li>
@@ -71,7 +71,8 @@ export default function Footer() {
                   <li>Knowledge Center</li>
                 </ul>
               </div>
-              <div className="col-span-2 md:col-span-1">
+
+              <div className="mb-8 w-full sm:w-1/2 lg:w-1/4">
                 <h2 className="FontTwo font-bold">FINANCING</h2>
                 <ul className="FontOne mt-4 space-y-2">
                   <li>Overview financing</li>
@@ -82,9 +83,9 @@ export default function Footer() {
                 </ul>
               </div>
 
-              <div>
+              <div className="mb-8 w-full sm:w-1/2 lg:w-1/4">
                 <h2 className="FontTwo font-bold">OUR LOCATIONS</h2>
-                <div className="mt-4 space-y-4">
+                <div className="mt-4 w-full space-y-4">
                   <div>
                     <h3 className="FontTwo flex cursor-pointer gap-2 font-bold">
                       <FaSortUp className="relative top-2 " />
@@ -112,13 +113,13 @@ export default function Footer() {
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div className="w-full">
                     <h3 className="FontTwo flex cursor-pointer gap-2 font-bold">
                       <FaAngleDown className="relative top-1" />
                       Miami
                     </h3>
                   </div>
-                  <div>
+                  <div className="w-full">
                     <h3 className="FontTwo flex cursor-pointer gap-2 font-bold">
                       <FaAngleDown className="relative top-1" />
                       North Miami
