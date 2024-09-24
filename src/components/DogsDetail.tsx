@@ -266,23 +266,23 @@ export default function DogsDetail() {
                 </div>
               </button>
             </div>
-          </div>
 
-          <div
-            className={`absolute z-40 ${
-              sortbyOpen ? "block" : "hidden"
-            } inset-x-56 top-full w-48 border bg-white p-4 lg:hidden`}
-          >
-            <ul className="space-y-2">
-              <li className="text-gray-800">Featured</li>
-              <li className="flex items-center justify-between text-gray-800">
-                Age: Young to Old
-                <RiCheckLine />
-              </li>
-              <li className="text-gray-800">Age: Old to Young</li>
-              <li className="text-gray-800">Price: Low to High</li>
-              <li className="text-gray-800">Price: High to Low</li>
-            </ul>
+            <div
+              className={`absolute z-40 ${
+                sortbyOpen ? "block" : "hidden"
+              } inset-x-56 top-full w-48 border bg-white p-4 lg:hidden`}
+            >
+              <ul className="space-y-2">
+                <li className="text-gray-800">Featured</li>
+                <li className="flex items-center justify-between text-gray-800">
+                  Age: Young to Old
+                  <RiCheckLine />
+                </li>
+                <li className="text-gray-800">Age: Old to Young</li>
+                <li className="text-gray-800">Price: Low to High</li>
+                <li className="text-gray-800">Price: High to Low</li>
+              </ul>
+            </div>
           </div>
 
           {/* <!-- Full content visible only on large screens --> */}
