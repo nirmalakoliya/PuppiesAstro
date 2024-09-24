@@ -40,7 +40,7 @@ export default function DogsDetail() {
     setIsOpen(!isOpen);
   };
 
-  const toggleItem = (index: any) => {
+  const toggleItem = (index: number) => {
     const newSelectedItems = [...selectedItems];
     newSelectedItems[index] = !newSelectedItems[index];
     setSelectedItems(newSelectedItems);
@@ -57,7 +57,11 @@ export default function DogsDetail() {
     setSelectedCount(0);
   };
 
-  const handleSelectAll = (event: any) => {
+  type HandleSelectAllProps = {
+    target: any;
+  };
+
+  const handleSelectAll = (event: HandleSelectAllProps) => {
     if (event.target.checked) {
       selectAll();
     } else {
@@ -113,7 +117,7 @@ export default function DogsDetail() {
                       <FaAngleRight />
                     </div>
 
-                    <div className="mb-6 mt-4 w-[393px]">
+                    <div className="mb-6 mt-4">
                       <div
                         className="flex items-center justify-between border-b border-black pb-2"
                         onClick={toggleDropdown}
