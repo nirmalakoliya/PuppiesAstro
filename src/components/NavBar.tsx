@@ -25,7 +25,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="border-t-4 border-purple-600">
+      <div className="sticky top-0 z-50 ">
         <div className="flex items-center justify-between bg-white p-3 shadow-md">
           {/* Left links section */}
           <div className="hidden space-x-4 sm:flex">
