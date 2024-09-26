@@ -1,8 +1,8 @@
 export default function DogsInfo() {
   return (
-    <>
+    <div className="relative h-auto overflow-clip">
       {/* Sticky Image, hidden on small screens */}
-      <div className="sticky top-0 mb-[-15rem] hidden h-60 w-96 sm:block">
+      <div className="sticky top-16 mb-[-15rem] hidden h-60 w-96 sm:block">
         <img
           src="/Images/DogInfo.png"
           alt="Illustration of a playful puppy"
@@ -526,6 +526,6 @@ export default function DogsInfo() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
