@@ -72,7 +72,7 @@ export default function DogsDetail() {
   return (
     <>
       <div className="FontThree">
-        <section className="relative border border-black bg-white p-2 lg:p-4">
+        <section className="sticky top-[104px] z-40 border border-black bg-white p-2 lg:p-4">
           {/* <!-- Filter By and Sort By for small screens --> */}
           <div className="flex items-center justify-center space-x-2 lg:justify-between lg:space-x-4">
             {/* <!-- Filter by section --> */}
